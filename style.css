@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: monospace;
+}
+
+/* Header */
+
+header nav ul {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  list-style: none;
+  padding: 22px;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+/* Top box container --> Top box */
+main .top-box-container {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+
+  padding: 22px;
+  grid-template-areas:
+    "topbox topbox topbox topbox"
+    "topbox topbox topbox topbox"
+    "side-box-a side-box-a side-box-b side-box-b"
+    "side-box-a side-box-a side-box-b side-box-b";
+}
+
+main .top-box-container .top-box {
+  grid-area: topbox;
+  font-size: 32px;
+  word-spacing: 1.8px;
+  text-transform: uppercase;
+  text-align: center;
+  background: black;
+  color: white;
+  padding: 5px;
+  border-radius: 3px;
+  -webkit-box-shadow: 10px 10px 16px -15px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 16px -15px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 16px -15px rgba(0, 0, 0, 0.75);
+}
+
+/* side box */
+
+main .top-box-container .side-box-a {
+  grid-area: side-box-a;
+  font-size: 22px;
+  word-spacing: 1.8px;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  -webkit-box-shadow: 10px 10px 16px -15px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 16px -15px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 16px -15px rgba(0, 0, 0, 0.75);
+  border-radius: 3px;
+}
+
+main .top-box-container .side-box-b {
+  grid-area: side-box-b;
+  font-size: 22px;
+  word-spacing: 1.8px;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  -webkit-box-shadow: 10px 10px 16px -15px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 16px -15px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 16px -15px rgba(0, 0, 0, 0.75);
+  border-radius: 3px;
+}
+
+/* skills section */
+
+main .skills {
+  display: grid;
+  gap: 3px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  padding: 12px;
+}
+
+main .skills #skills-heading {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  font-size: 21px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+main .skills .skill-box {
+  background-color: black;
+  padding: 10px;
+  color: white;
+}
+
+/* projects section */
+
+main .projects {
+  display: grid;
+  gap: 3px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  padding: 22px;
+}
+
+main .projects #projects-heading {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 21px;
+}
+
+main .projects .project-box {
+  background-color: black;
+  color: white;
+  padding: 12px;
+}
+
+/* experience section */
+main .experience {
+  display: grid;
+  gap: 3px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  padding: 22px;
+}
+
+main .experience #experience-heading {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 21px;
+}
+
+main .experience .experience-box {
+  background-color: black;
+  color: white;
+  padding: 12px;
+}
+
+/* footer */
+footer .socials {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  list-style: none;
+  padding: 22px;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+}
