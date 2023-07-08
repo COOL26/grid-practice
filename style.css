@@ -96,7 +96,6 @@ main .skills {
   display: grid;
   gap: 3px;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(5, 1fr);
   padding: 18px;
 }
@@ -113,6 +112,7 @@ main .skills .skill-box {
   background-color: black;
   padding: 10px;
   color: white;
+  font-size: 12px;
 }
 
 /* projects section */
@@ -173,4 +173,21 @@ footer .socials {
   justify-items: center;
   align-items: center;
   align-content: center;
+}
+/* media query */
+@media only screen and (max-width: 380px) {
+  main .skills {
+    display: grid;
+    gap: 3px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    padding: 18px;
+  }
+  main .skills #skills-heading {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    font-size: 21px;
+    text-align: center;
+    text-transform: uppercase;
+  }
 }
