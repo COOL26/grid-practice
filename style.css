@@ -14,7 +14,7 @@ body {
 header nav ul {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   list-style: none;
   padding: 22px;
   justify-content: center;
