@@ -195,3 +195,82 @@ footer .socials {
     font-size: 1rem;
   }
 }
+
+@media only screen and (min-width: 800px) {
+  a {
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+  main .top-box-container {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+
+    padding: 22px;
+    grid-template-areas:
+      "topbox topbox topbox side-box-a"
+      "topbox topbox topbox side-box-a"
+      "topbox topbox topbox side-box-b"
+      "topbox topbox topbox side-box-b";
+  }
+  main .top-box-container .top-box {
+    grid-area: topbox;
+    height: 616px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(
+        to bottom,
+        rgba(49, 49, 49, 0.52),
+        rgba(65, 8, 51, 0.73)
+      ),
+      url(img/harshPic2.jpg);
+    background-size: cover;
+    background-position: center;
+    text-shadow: 2px 2px 1px #000000;
+    border-radius: 10px;
+  }
+  main .top-box-container .side-box-a {
+    grid-area: side-box-a;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(
+        to bottom,
+        rgba(49, 49, 49, 0.52),
+        rgba(65, 8, 51, 0.73)
+      ),
+      url(img/harshPic3.jpg);
+    background-size: cover;
+    background-position: center;
+    text-shadow: 2px 2px 1px #000000;
+    border-radius: 10px;
+  }
+  main .top-box-container .side-box-b {
+    grid-area: side-box-b;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(
+        to bottom,
+        rgba(49, 49, 49, 0.52),
+        rgba(65, 8, 51, 0.73)
+      ),
+      url(img/harshPic4.jpg);
+    background-size: cover;
+    background-position: center;
+    text-shadow: 2px 2px 1px #000000;
+    border-radius: 10px;
+  }
+  main .skills .skill-box,
+  main .projects .project-box,
+  main .experience .experience-box {
+    font-size: 18px;
+  }
+}
